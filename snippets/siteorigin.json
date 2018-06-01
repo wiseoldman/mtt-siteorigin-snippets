@@ -1,0 +1,77 @@
+{
+	"Widget": {
+		"prefix": "widget",
+		"body": [
+			"/*",
+			"Widget Name: Morning Train ${1:Widget Name}",
+			"Description: Display a ${1:Widget Name}",
+			"Author: Morning Train Technologies ApS",
+			"Author URI: https://morningtrain.dk",
+			"Widget URI: https://morningtrain.dk",
+			"*/",
+			"",
+			"use MTTSiteoriginWidgets\\Plugin\\MTTSiteoriginWidget;",
+			"use MTTSiteoriginWidgets\\Plugin\\Plugin;",
+			"",
+			"class MTT${2:NameSpace} extends MTTSiteoriginWidget {",
+			"",
+			"\tpublic \\$slug = 'mtt-${3:widget-slug}';",
+			"\tpublic \\$name = 'Morning Train - ${1:Widget Name}';",
+			"",
+			"\tpublic function getFormOptions() {",
+			"\t\treturn array(",
+			"\t\t\t$0",
+			"\t\t);",
+			"\t}",
+			"}",
+			"",
+			"siteorigin_widget_register('mtt-${3:widget-slug}', __FILE__, __NAMESPACE__ . '\\MTT${2:NameSpace}');"
+		],
+		"description": "Generates a SiteOrigin widget"
+	},
+	"Widget Text": {
+        "prefix": "wtext",
+        "body": [
+            "'$1' => array(",
+            "\t'type' => 'text',",
+            "\t'label' => \\Theme::translate('$2'),",
+            ")$0"
+        ],
+        "description": "Display a siteorigin text field"
+	},
+	"Widget Image": {
+        "prefix": "wimage",
+        "body": [
+            "'$1' => array(",
+            "\t'type' => 'media',",
+            "\t'label' => \\Theme::translate('Choose an ${2:image}'),",
+            "\t'choose' => \\Theme::translate('Choose ${2:image}'),",
+            "\t'update' => \\Theme::translate('Set ${2:image}'),",
+            "\t'library' => 'image'",
+            ")$0"
+        ],
+        "description": "Display a siteorigin image field"
+	},
+	"Widget Link": {
+        "prefix": "wlink",
+        "body": [
+			"'$1' => array(",
+			"\t'type' => 'link',",
+			"\t'label' => \\Theme::translate('${2:Link}'),",
+			"\t${3:'default' => ''}",
+			")$0"
+        ],
+        "description": "Display a siteorigin link field"
+	},
+	"Widget Color": {
+        "prefix": "wcolor",
+        "body": [
+            "'$1' => array(",
+			"\t'type' => 'color',",
+			"\t'label' => \\Theme::translate('${2:Choose a color}'),",
+			"\t'default' => '${3:#FFF}'",
+            ")$0"
+        ],
+        "description": "Display a siteorigin color field"
+	}
+}
