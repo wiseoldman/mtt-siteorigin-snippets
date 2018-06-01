@@ -1,4 +1,4 @@
-# MTT Snippet Pack
+# MTT SiteOrigin Snippets
 
 Snippet pack developed at Morning Train for SiteOrigin pagebuilder snippets.
 
