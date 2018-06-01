@@ -1,38 +1,34 @@
 # MTT Snippet Pack
 
-## Features
-
-Snippet pack developed at Morning Train for WP and JS (SiteOrigin pagebuilder snippets + general snippets)
+Snippet pack developed at Morning Train for SiteOrigin pagebuilder snippets.
 
 ## Snippets
 
-### SiteOrigin Pagebuilder
-
-#### Create widget
+### Create widget
 
 ```
 widget
 ```
 
-#### Widget text
+### Widget text
 
 ```
 wtext
 ```
 
-#### Widget image
+### Widget image
 
 ```
 wimage
 ```
 
-#### Widget link
+### Widget link
 
 ```
 wlink
 ```
 
-#### Widget color
+### Widget color
 
 ```
 wcolor
