@@ -1,8 +1,8 @@
 {
-    "name": "mtt-snippet-pack",
-    "displayName": "MTT Snippet pack",
-    "description": "Snippet pack developed at Morning Train for WP and JS (SiteOrigin pagebuilder snippets + general snippets)",
-    "version": "0.1.1",
+    "name": "mtt-siteorigin-snippets",
+    "displayName": "MTT SiteOrigin Snippets",
+    "description": "Snippet pack developed at Morning Train for SiteOrigin pagebuilder snippets",
+    "version": "0.0.2",
     "publisher": "wiseoldman",
     "engines": {
         "vscode": "^1.23.0"
@@ -21,6 +21,10 @@
                 "path": "./snippets/siteorigin.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wiseoldman/mtt-siteorigin-snippets.git"
     },
     "icon": "assets/img/icon.png"
 }
