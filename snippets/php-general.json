@@ -1,9 +1,0 @@
-{
-	"Echo If": {
-		"prefix": "echoif",
-		"body": [
-			"echo $1 ? $2 : '$3';$0"
-		],
-		"description": "Echo if"
-	}
-}

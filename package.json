@@ -14,10 +14,6 @@
         "snippets": [
             {
                 "language": "php",
-                "path": "./snippets/php-general.json"
-            },
-            {
-                "language": "php",
                 "path": "./snippets/siteorigin.json"
             }
         ]
