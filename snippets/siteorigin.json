@@ -2,6 +2,8 @@
 	"Widget": {
 		"prefix": "widget",
 		"body": [
+			"namespace MTTSiteoriginWidgets\\Widgets\\${2:NameSpace};",
+			"",
 			"/*",
 			"Widget Name: Morning Train ${1:Widget Name}",
 			"Description: Display a ${1:Widget Name}",
