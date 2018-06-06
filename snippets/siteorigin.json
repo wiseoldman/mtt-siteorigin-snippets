@@ -2,11 +2,11 @@
 	"Widget": {
 		"prefix": "widget",
 		"body": [
-			"namespace MTTSiteoriginWidgets\\Widgets\\${2:NameSpace};",
+			"namespace MTTSiteoriginWidgets\\Widgets\\\\${1:NameSpace};",
 			"",
 			"/*",
-			"Widget Name: Morning Train ${1:Widget Name}",
-			"Description: Display a ${1:Widget Name}",
+			"Widget Name: Morning Train ${2:Widget Name}",
+			"Description: Display a ${2:Widget Name}",
 			"Author: Morning Train Technologies ApS",
 			"Author URI: https://morningtrain.dk",
 			"Widget URI: https://morningtrain.dk",
@@ -15,10 +15,10 @@
 			"use MTTSiteoriginWidgets\\Plugin\\MTTSiteoriginWidget;",
 			"use MTTSiteoriginWidgets\\Plugin\\Plugin;",
 			"",
-			"class MTT${2:NameSpace} extends MTTSiteoriginWidget {",
+			"class MTT${1:NameSpace} extends MTTSiteoriginWidget {",
 			"",
 			"\tpublic \\$slug = 'mtt-${3:widget-slug}';",
-			"\tpublic \\$name = 'Morning Train - ${1:Widget Name}';",
+			"\tpublic \\$name = 'Morning Train - ${2:Widget Name}';",
 			"",
 			"\tpublic function getFormOptions() {",
 			"\t\treturn array(",
@@ -27,7 +27,7 @@
 			"\t}",
 			"}",
 			"",
-			"siteorigin_widget_register('mtt-${3:widget-slug}', __FILE__, __NAMESPACE__ . '\\MTT${2:NameSpace}');"
+			"siteorigin_widget_register('mtt-${3:widget-slug}', __FILE__, __NAMESPACE__ . '\\MTT${1:NameSpace}');"
 		],
 		"description": "Generates a SiteOrigin widget"
 	},
