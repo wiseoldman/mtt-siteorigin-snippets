@@ -34,9 +34,9 @@
 	"Widget Text": {
         "prefix": "wtext",
         "body": [
-            "'$1' => array(",
+            "'${1:text}' => array(",
             "\t'type' => 'text',",
-            "\t'label' => \\Theme::translate('$2'),",
+            "\t'label' => \\Theme::translate('${2:Text field}'),",
             ")$0"
         ],
         "description": "Display a siteorigin text field"
@@ -44,7 +44,7 @@
 	"Widget Image": {
         "prefix": "wimage",
         "body": [
-            "'$1' => array(",
+            "'${1:image}' => array(",
             "\t'type' => 'media',",
             "\t'label' => \\Theme::translate('Choose an ${2:image}'),",
             "\t'choose' => \\Theme::translate('Choose ${2:image}'),",
@@ -57,7 +57,7 @@
 	"Widget Link": {
         "prefix": "wlink",
         "body": [
-			"'$1' => array(",
+			"'${1:link}' => array(",
 			"\t'type' => 'link',",
 			"\t'label' => \\Theme::translate('${2:Link}'),",
 			"\t${3:'default' => ''}",
@@ -68,12 +68,26 @@
 	"Widget Color": {
         "prefix": "wcolor",
         "body": [
-            "'$1' => array(",
+            "'${1:color}' => array(",
 			"\t'type' => 'color',",
 			"\t'label' => \\Theme::translate('${2:Choose a color}'),",
 			"\t'default' => '${3:#FFF}'",
             ")$0"
         ],
         "description": "Display a siteorigin color field"
+	},
+	"Widget Repeater": {
+        "prefix": "wrepeater",
+        "body": [
+            "'${1:repeater}' => array(",
+			"\t'type' => 'repeater',",
+			"\t'label' => \\Theme::translate('${2:A repeating repeater}'),",
+			"\t'item_name'  => \\Theme::translate('${3:Repeater item}'),",
+			"\t'fields' => array(",
+			"\t\t$4",
+			"\t),",
+			")$0"
+        ],
+        "description": "Display a siteorigin repeater"
 	}
 }
