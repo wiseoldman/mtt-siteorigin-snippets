@@ -9,5 +9,10 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 ## 0.0.7
 ### Added
 - wrepeater (widget repeater)
+
 ### Changed
 - Changed widget default names from empty to the field type
+
+##0.0.8
+### Changed
+- Removed trailing commas + updated README

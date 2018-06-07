@@ -33,3 +33,9 @@ wlink
 ```
 wcolor
 ```
+
+### Widget repeater
+
+```
+wrepeater
+```
