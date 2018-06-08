@@ -5,7 +5,7 @@ Snippet pack developed at Morning Train for SiteOrigin pagebuilder snippets.
 NOTE: Some of these snippets are using a custom markup specifically made for our WP theme,
 a default SiteOrigin widget snippet pack is on it's way, stay tuned.
 
-<img alt="mtt siteorigin snippets in use" src="assets/img/mtt-snippets.gif">
+<img alt="mtt siteorigin snippets in use" src="https://raw.githubusercontent.com/wiseoldman/mtt-siteorigin-snippets/master/assets/img/mtt-snippets.gif">
 
 ## Snippets
 

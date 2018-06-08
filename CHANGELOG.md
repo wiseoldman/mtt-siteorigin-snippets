@@ -34,3 +34,6 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 - Added: wicon
 - Added: wfont
 - Added: wsection
+
+## 1.0.1
+- Added: Preview gif
