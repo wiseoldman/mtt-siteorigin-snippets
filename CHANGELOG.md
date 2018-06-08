@@ -7,11 +7,9 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 - wcolor (widget color field)
 
 ## 0.0.7
-### Added
-- wrepeater (widget repeater)
-
-### Changed
-- Changed widget default names from empty to the field type
+### Added/changed
+- Added: wrepeater (widget repeater)
+- Changed: widget default names from empty to the field type
 
 ##0.0.8
 ### Changed
