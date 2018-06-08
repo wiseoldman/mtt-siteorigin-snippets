@@ -6,7 +6,7 @@
 			"",
 			"/*",
 			"Widget Name: Morning Train ${2:Widget Name}",
-			"Description: Display a ${2:Widget Name}",
+			"Description: Add a ${2:Widget Name}",
 			"Author: Morning Train Technologies ApS",
 			"Author URI: https://morningtrain.dk",
 			"Widget URI: https://morningtrain.dk",
@@ -34,17 +34,17 @@
 	"Widget Text": {
         "prefix": "wtext",
         "body": [
-            "'${1:text}' => array(",
+            "'${1:some_text}' => array(",
             "\t'type' => 'text',",
-            "\t'label' => \\Theme::translate('${2:Text field}')",
+            "\t'label' => \\Theme::translate('${2:Some text goes here}')",
             ")$0"
         ],
-        "description": "Display a siteorigin text field"
+        "description": "Renders a text input field."
 	},
 	"Widget Image": {
         "prefix": "wimage",
         "body": [
-            "'${1:image}' => array(",
+            "'${1:some_image}' => array(",
             "\t'type' => 'media',",
             "\t'label' => \\Theme::translate('Choose an ${2:image}'),",
             "\t'choose' => \\Theme::translate('Choose ${2:image}'),",
@@ -52,34 +52,149 @@
             "\t'library' => 'image'",
             ")$0"
         ],
-        "description": "Display a siteorigin image field"
+        "description": "Renders an image selector button."
 	},
 	"Widget Link": {
         "prefix": "wlink",
         "body": [
-			"'${1:link}' => array(",
+			"'${1:some_url}' => array(",
 			"\t'type' => 'link',",
-			"\t'label' => \\Theme::translate('${2:Link}'),",
-			"\t${3:'default' => ''}",
+			"\t'label' => \\Theme::translate('${2:Some URL goes here}'),",
+			"\t${3:'default' => '${4:http://morningtrain.dk}'}",
 			")$0"
         ],
-        "description": "Display a siteorigin link field"
+        "description": "Renders an input field for entering any URL"
 	},
 	"Widget Color": {
         "prefix": "wcolor",
         "body": [
-            "'${1:color}' => array(",
+            "'${1:some_color}' => array(",
 			"\t'type' => 'color',",
 			"\t'label' => \\Theme::translate('${2:Choose a color}'),",
-			"\t'default' => '${3:#FFF}'",
+			"\t${3:'default' => '${4:#FFF}'}",
             ")$0"
         ],
-        "description": "Display a siteorigin color field"
+        "description": "Renders a color input field and color picker."
+	},
+	"Widget Number": {
+        "prefix": "wnumber",
+        "body": [
+            "'${1:some_number}' => array(",
+			"\t'type' => 'number',",
+			"\t'label' => \\Theme::translate('${2:Enter a number}'),",
+			"\t${3:'default' => '${4:123}'}",
+            ")$0"
+        ],
+        "description": "Renders a text input field for entering a number. "
+	},
+	"Widget Textarea": {
+        "prefix": "wtextarea",
+        "body": [
+            "'${1:some_textarea}' => array(",
+			"\t'type' => 'textarea',",
+			"\t'label' => \\Theme::translate('${2:Type a message}'),",
+			"\t${3:'default' => '${4:An example of a long message.}',}",
+			"\t${5:'rows' => '${6:5}'}",
+            ")$0"
+        ],
+        "description": "Renders a textarea field."
+	},
+	"Widget Tinymce": {
+        "prefix": "wtinymce",
+        "body": [
+            "'${1:some_tinymce_editor}' => array(",
+			"\t'type' => 'tinymce',",
+			"\t'label' => \\Theme::translate('${2:Visually edit, richly.}'),",
+			"\t${3:'default' => '${4:An example of a long message.}',}",
+			"\t${5:'rows' => '${6:5}'},",
+			"\t${7:'default_editor' => '${8:tinymce}'}",
+            ")$0"
+        ],
+        "description": "Renders a TinyMCE editor field."
+	},
+	"Widget Slider": {
+        "prefix": "wslider",
+        "body": [
+            "'${1:some_number_in_a_range}' => array(",
+			"\t'type' => 'slider',",
+			"\t'label' => \\Theme::translate('${2:Choose a number}'),",
+			"\t'default' => ${3:24},",
+			"\t'default' => ${4:2},",
+			"\t'default' => ${5:37},",
+			"\t'integer' => ${6:true}",
+            ")$0"
+        ],
+        "description": "Renders a TinyMCE editor field."
+	},
+	"Widget Select": {
+        "prefix": "wselect",
+        "body": [
+            "'${1:some_selection}' => array(",
+			"\t'type' => 'select',",
+			"\t'label' => \\Theme::translate('${2:Choose a thing from a long list of things}'),",
+			"\t${3:'multiple' => true,}",
+			"\t'default' => '${4:this_thing}',",
+			"\t'options' => array(",
+			"\t\t'${4:this_thing}' => \\Theme::translate('${5:This thing}'),",
+			"\t\t'${6:that_thing}' => \\Theme::translate('${7:That thing}')$8",
+			"\t)",
+            ")$0"
+        ],
+        "description": "Renders a dropdown select field."
+	},
+	"Widget Radio": {
+        "prefix": "wradio",
+        "body": [
+            "'${1:radio_selection}' => array(",
+			"\t'type' => 'radio',",
+			"\t'label' => \\Theme::translate('${2:Choose a thing from a long list of things}'),",
+			"\t'default' => '${3:this_thing}',",
+			"\t'options' => array(",
+			"\t\t'${3:this_thing}' => \\Theme::translate('${4:This thing}'),",
+			"\t\t'${5:that_thing}' => \\Theme::translate('${6:That thing}')$7",
+            "\t)",
+            ")$0"
+        ],
+        "description": "Renders a radio input field."
+	},
+	"Widget Checkbox": {
+        "prefix": "wcheckbox",
+        "body": [
+            "'${1:some_boolean}' => array(",
+            "\t'type' => 'checkbox',",
+            "\t'label' => \\Theme::translate('${2:Allow this thing?}'),",
+            "\t'default' => ${3:true}",
+            ")$0"
+        ],
+        "description": "Renders a checkbox field."
+	},
+	"Widget Posts": {
+        "prefix": "wposts",
+        "body": [
+            "'${1:some_posts}' => array(",
+            "\t'type' => 'posts',",
+            "\t'label' => \\Theme::translate('${2:Some posts query}')",
+            ")$0"
+        ],
+        "description": "Renders a post selector field."
+	},
+	"Widget Section": {
+        "prefix": "wsection",
+        "body": [
+            "'${1:a_section}' => array(",
+			"\t'type' => 'section',",
+			"\t'label' => \\Theme::translate('${2:A section containing related fields.}'),",
+			"\t'fields' => array(",
+			"\t\t$4",
+			"\t),",
+			")$0"
+        ],
+        "description": "The section field type provides a convenient way to group and hide related form fields."
 	},
 	"Widget Repeater": {
         "prefix": "wrepeater",
         "body": [
-            "'${1:repeater}' => array(",
+            "'${1:a_repeater}' => array(",
 			"\t'type' => 'repeater',",
 			"\t'label' => \\Theme::translate('${2:A repeating repeater}'),",
 			"\t'item_name'  => \\Theme::translate('${3:Repeater item}'),",
@@ -88,6 +203,38 @@
 			"\t),",
 			")$0"
         ],
-        "description": "Display a siteorigin repeater"
+        "description": "The repeater field type provides a convenient way to repeat a specified set of form fields."
+	},
+	"Widget Widget": {
+        "prefix": "wwidget",
+        "body": [
+            "'${1:some_widget}' => array(",
+            "\t'type' => 'widget',",
+            "\t'label' => \\Theme::translate('${2:Select an icon}'),",
+			"\t'class' => '${3:SiteOrigin_Widget_Button_Widget}',",
+			"\t'hide' => ${4:true}",
+            ")$0"
+        ],
+        "description": "Includes the entire form of an existing widget class."
+	},
+	"Widget Icon": {
+        "prefix": "wicon",
+        "body": [
+            "'${1:some_icon}' => array(",
+            "\t'type' => 'icon',",
+            "\t'label' => \\Theme::translate('${2:Select an icon}')",
+            ")$0"
+        ],
+        "description": "Renders an icon selector field."
+	},
+	"Widget Font": {
+        "prefix": "wfont",
+        "body": [
+            "'${1:some_font}' => array(",
+            "\t'type' => 'icon',",
+            "\t'label' => \\Theme::translate('${2:Select a font}')",
+            ")$0"
+        ],
+        "description": "Renders a font selector field."
 	}
 }
