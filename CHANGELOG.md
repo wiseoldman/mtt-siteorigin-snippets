@@ -18,3 +18,7 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 ##0.0.9
 ### Changed
 - Quick-fix for widget namespace
+
+##0.0.10
+### Changed
+- Add notice to README
