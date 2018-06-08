@@ -16,3 +16,7 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 ##0.0.8
 ### Changed
 - Removed trailing commas + updated README
+
+##0.0.9
+### Changed
+- Quick-fix for widget namespace
