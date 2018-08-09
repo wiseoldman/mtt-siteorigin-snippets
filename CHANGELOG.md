@@ -37,3 +37,6 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 
 ## 1.0.1
 - Added: Preview gif
+
+## 1.0.1
+- Changed: Fixed slider widget min/max attributes

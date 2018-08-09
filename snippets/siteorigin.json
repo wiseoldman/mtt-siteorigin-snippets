@@ -119,8 +119,8 @@
 			"\t'type' => 'slider',",
 			"\t'label' => \\Theme::translate('${2:Choose a number}'),",
 			"\t'default' => ${3:24},",
-			"\t'default' => ${4:2},",
-			"\t'default' => ${5:37},",
+			"\t'min' => ${4:2},",
+			"\t'max' => ${5:37},",
 			"\t'integer' => ${6:true}",
             ")$0"
         ],
