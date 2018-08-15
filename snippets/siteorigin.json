@@ -236,5 +236,25 @@
             ")$0"
         ],
         "description": "Renders a font selector field."
+	},
+	"Widget State emitter": {
+        "prefix": "wstate_emitter",
+        "body": [
+			"'state_emitter' => array(",
+			"\t'callback' => '${1:select}',",
+			"\t'args' => array('${2:type}'),",
+			")$0"
+        ],
+        "description": "Add a state emitter."
+	},
+	"Widget State handler": {
+        "prefix": "wstate_handler",
+        "body": [
+			"'state_handler' => array(",
+			"\t'type[${1:default}]' => array('show'),",
+			"\t'_else[type]' => array('hide'),",
+			")$0"
+        ],
+        "description": "Add a state handler."
 	}
 }

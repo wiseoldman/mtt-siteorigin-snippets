@@ -38,5 +38,9 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 ## 1.0.1
 - Added: Preview gif
 
-## 1.0.1
+## 1.0.2
 - Changed: Fixed slider widget min/max attributes
+
+## 1.0.3
+- Added: wstate_emitter (state emitter)
+- Added: wstate_handler (state handler)
