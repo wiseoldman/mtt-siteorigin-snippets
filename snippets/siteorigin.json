@@ -5,7 +5,7 @@
 			"namespace MTTSiteoriginWidgets\\Widgets\\\\MTT${1:NameSpace};",
 			"",
 			"/*",
-			"Widget Name: Morning Train ${2:Widget Name}",
+			"Widget Name: Morning Train - ${2:Widget Name}",
 			"Description: Add a ${2:Widget Name}",
 			"Author: Morning Train Technologies ApS",
 			"Author URI: https://morningtrain.dk",
@@ -200,7 +200,7 @@
 			"\t'item_name'  => \\Theme::translate('${3:Repeater item}'),",
 			"\t'fields' => array(",
 			"\t\t$4",
-			"\t),",
+			"\t)",
 			")$0"
         ],
         "description": "The repeater field type provides a convenient way to repeat a specified set of form fields."
