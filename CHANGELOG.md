@@ -44,3 +44,7 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 ## 1.0.3
 - Added: wstate_emitter (state emitter)
 - Added: wstate_handler (state handler)
+
+## 1.0.4
+- Changed: removed wrongly placed comma from repeaters
+- Changed: widget title to inlcude a dash
