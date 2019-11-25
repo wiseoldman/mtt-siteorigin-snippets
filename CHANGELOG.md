@@ -48,3 +48,6 @@ All notable changes to the "mtt-siteorigin-snippets" extension will be documente
 ## 1.0.4
 - Changed: removed wrongly placed comma from repeaters
 - Changed: widget title to inlcude a dash
+
+## 1.0.5
+- Added: witem_label (add item_labels to repeaters)
