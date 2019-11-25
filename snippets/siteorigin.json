@@ -256,5 +256,16 @@
 			")$0"
         ],
         "description": "Add a state handler."
+	},
+	"Widget item label": {
+        "prefix": "witem_label",
+        "body": [
+			"'item_label' => array(",
+			"\t'selector' => \"[id*='repeater_field']\"",
+			"\t'update_event' => 'change'",
+			"\t'value_method' => 'val'",
+			")$0"
+        ],
+        "description": "Add a state handler."
 	}
 }
