@@ -2,7 +2,7 @@
     "name": "mtt-siteorigin-snippets",
     "displayName": "MTT SiteOrigin Snippets",
     "description": "Snippet pack developed at Morning Train for SiteOrigin pagebuilder snippets",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "publisher": "wiseoldman",
     "engines": {
         "vscode": "^1.23.0"
